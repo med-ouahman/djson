@@ -58,5 +58,6 @@ djson_exit_code djson::parse(const std::string_view& file) {
 		return djson_exit_code::Runtime;
 	}
 	
+	DjsonParser parser(DjsonParser::from_c_str(mapped.data(), mapped.size()));
 	return djson_exit_code::Ok;
 }
