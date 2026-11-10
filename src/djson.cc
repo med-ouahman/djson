@@ -1,5 +1,6 @@
 
 #include "djson.hpp"
+#include "parser/djson_parser.hpp"
 
 djson::djson()
 	: m_logging(),
